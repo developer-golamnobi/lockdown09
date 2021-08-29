@@ -1,0 +1,470 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body,h1,h2,h3,h4,h5,h6,p,span,a{
+    font-family: 'Work Sans', sans-serif;
+  }
+  .clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+  }
+  .fix-width{
+    max-width: 1020px;
+    margin: auto;
+  }
+  .left{
+    float: left;
+  }
+  .right{
+    float: right;
+  }
+  img{
+    max-width: 100%;
+  }
+  a{
+    text-decoration: none;
+  }
+  /*main css start*/
+  .header-section{
+      background: #fff;
+  }
+  .header-logo{
+    width: 30%;
+  }
+  .header-logo img{
+    width: 80px;
+    margin-top: 5px;
+  }
+  .header-menu{
+    width: 70%;
+  }
+  .header-menu ul{
+    text-align: right;
+  }
+  .header-menu ul li{
+    display: inline-block;
+  }
+  .header-menu ul li a{
+    display: inline-block;
+    font-size: 20px;
+    padding: 0 20px;
+    line-height: 50px;
+    color: black;
+  }
+  /* banner css*/
+  .banner-section{
+    background: url(kobu-agency-IWLR561-Yb-MY-unsplash.jpg) center no-repeat;
+    background-size: cover;
+    padding: 220px 0;
+    position: relative;
+    z-index: 1;
+  }
+  .banner-content::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0,0,.5);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    
+  }
+  .banner-content{
+    text-align: center;
+    color: #fff;
+  }
+  .banner-content h5{
+    font-size: 20px;
+  }
+  .banner-content h1{
+    padding: 25px 0;
+    font-size: 35px;
+    font-weight: 800;
+  }
+  .default-btn{
+    color: #777;
+    background: white;
+    display: inline-block;
+    padding: 20px 25px;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-right: 5px;
+    margin-left: 10px;
+    font-weight: 900;
+    transition: .5s;
+  }
+  .default-btn span{
+    padding-right: 5px;
+  }
+  
+  .default-btn:hover{
+    background: #aa972c;
+    color: #f7f7f7;
+  }
+  
+  /* pricing css*/
+  .pricing-section{
+  }
+  .pricin-text{
+    background: #f5f5f5;
+    text-align: center;
+    padding: 40px 0;
+  }
+  .pricin-text h2{
+    padding: 30px 0;
+    font-size: 35px;
+    font-weight: 500;
+  }
+  .pricin-text h5{
+    font-size: 12px;
+  }
+  .pricing-items{
+    width: 32%;
+    box-shadow: 4px 4px 20px 0 rgba(0, 0,0,1);
+    margin-right: 1%;
+  }
+  .pricing-items:nth-child(3){
+      margin-right: 0;
+  }
+  .pricing-p{
+    border-bottom: 1px solid black;
+  }
+  .pricing-p h3{
+    font-size: 20px;
+    padding: 20px;
+    font-weight: 600;
+  }
+
+ .pricing-p .div-1{
+  background: #f7f7f7;
+font-size: 30px;
+margin: 20px;
+}
+.div-1 h2 span{
+  font-size: 20px;
+}
+
+  /* .pricing-p {
+    font-size: 45px;
+    background: #f5f5f5;
+    margin: 10px 20px;
+  } */
+  .pricing-items:hover .pricing-p{
+    background: #cea008 !important;
+    color: #f7f7f7;
+
+    
+  }
+  .pricing-p:hover .div-1{
+    background: #cea008;
+
+  }
+  /* .pricing-p h2 span{
+    font-size: 25px;
+  } */
+  .pricing-p h4{
+    padding: 10px 20px;
+    font-size: 18px;
+      font-weight: 500;
+  
+  }
+  .pricing-p h5{
+    padding: 20px;
+    font-size: 17px;
+     font-weight: 500;
+  line-height: 30px;
+  }
+  
+  .pricing-raite{
+    padding: 20px;
+  }
+  .pricing-raite ul{
+    list-style: none;
+  }
+  .pricing-raite ul li{
+    line-height: 45px;
+    font-size: 20px;
+    color: #767676;
+  }
+  .pricing-raite span{
+    padding-right: 25px;
+    color: #dbbc0a;
+  }
+  .btn-section{
+      text-align: center;
+  }
+  .btn-section .btn-content{
+      display: inline-block;
+      background: white;
+      color: #767676;
+      border-radius: 5px;
+      margin-top: 15px;
+      box-shadow: 4px 4px 20px 0 rgba(0, 0,0,.30);
+      padding: 15px;
+      margin-bottom: 10px;
+  }
+  
+  .pricing-items:hover .btn-section .btn-content{
+    background: #cea008;
+color: #f7f7f7;
+  }
+  /* team section*/
+  .team-section{
+      padding: 60px 0;
+      background:#fff;
+  }
+  .team-text{}
+  .team-text h3{
+      text-align: center;
+      font-weight: 400;
+      padding-bottom: 40px;
+  }
+  .imgage-content{
+      width: 24%;
+      margin-right: 1%;
+      border: 5px double #aa972c;
+  }
+.img-item{
+
+}
+.img-item img{
+    max-width: 100%;
+}
+.img-item h3{
+    font-weight: 500;
+    padding-left: 30px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+.img-item h5{
+    font-weight: 500;
+    padding-left: 30px;
+    padding: 10px 30px;
+    color: #9e9b9b;
+}
+/*news-letter css*/
+.news-section{
+  padding: 60px;
+  background: #f5f5f5;
+}
+.news-content{
+  text-align: center;
+  width: 500px;
+  margin: auto;
+}
+.news-content h5{
+  font-size: 16px;
+  font-weight: 500;
+}
+.news-content h2{
+  padding: 40px 0;
+  font-size: 30px;
+  font-weight: 500;
+}
+.news-content input{
+  padding: 15px;
+  width: 100%;
+  border-color: rgb(170,151,44);
+  border-radius: 5px;
+  transition: .5s;
+
+}
+.news-content input:hover{
+  box-shadow: 4px 4px 20px 0 rgba(44, 120, 170, 0.5);
+  
+}
+.default-btnn{
+  margin-top: 20px;
+  display: inline-block;
+  padding: 15px 35px;
+  border-radius: 10px;
+  font-size: 25px;
+  color: white;
+  background: rgb(170,151,44);
+transition: .5s;
+}
+.default-btnn:hover{
+  background: #ffffff;
+  color: rgb(170,151,44);
+  box-shadow: 4px 4px 20px 0 rgba(228, 231, 233, 2);
+
+}
+
+/*about section*/
+.chose-text{}
+.chose-text h3{
+  padding-top: 15px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+}
+.chose-img{
+  width: 48%;
+  margin-right: 2%;
+}
+.chose-img img{
+  max-width: 100%;
+}
+.chose-last{
+  width: 50%;
+}
+.chose-item{}
+.chose-item h2{
+  font-size: 25px;
+  padding-bottom: 15px;
+  font-weight: 500;
+  padding-top: 15px;
+}
+.chose-item p{
+  line-height: 35px;
+  font-size: 17px;
+}
+/*testimonial css*/
+.testimonial-section{
+  background: #f5f5f5;
+  padding: 50px 0;
+}
+.test-text{}
+.test-text h5{
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 40px;
+  font-weight: 400;
+}
+.test-text h2{
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: 50px;
+}
+.text-item{
+  width: 31%;
+  margin-right: 2%;
+  border: 1px solid gray;
+}
+.text-items{
+  background: #ffffff;
+  padding: 30px;
+position: relative;
+}
+.text-items::after{
+  content: "";
+  position: absolute;
+  bottom: -19px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0;
+height: 0;
+border-style: solid;
+border-width: 20px 20px 0 20px;
+border-color: #ffffff transparent transparent transparent;
+
+}
+.text-items span{
+  color: #f1f2f8;
+  font-size: 60px;
+}
+.text-items p{
+  margin-top: -50px;
+  line-height: 30px;
+}
+.photo-leftss{
+  background: #f7f7f7;
+  padding: 30px;
+
+}
+.photo-leftss img{
+  width: 80px;
+  float: left;
+margin-bottom: 40px;
+    border: 5px solid rgb(170,151,44);
+margin-right: 25px;
+}
+.photo-leftss h3{
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+.photo-leftss h5{
+  font-weight: 500;
+}
+/* contact css*/
+.contact-section{
+  width: 600px;
+  margin: auto;
+  background: #ffffff;
+  padding: 50px 0;
+
+}
+.contact-text{
+  text-align: center;
+  padding: 25px;
+}
+.contact-text h3{
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+.contact-text p{
+  font-size: 15px;
+  line-height: 30px;
+}
+input{
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 5px;
+    padding-bottom: 10px;
+  border-color: rgb(170,151,44);
+  border-radius: 5px;
+  transition: .5s;
+
+}
+input:hover{
+  box-shadow: 4px 4px 20px 0 rgba(44, 120, 170, 0.3);
+
+}
+.w-50{
+  width: 48%;
+  padding-bottom: 15px;
+  margin: 15px 0;
+  border-color: rgb(170,151,44);
+  margin-right: 1.5%;
+}
+textarea{
+  width: 100%;
+  height: 180px;
+  padding: 10px;
+    border-color: rgb(170,151,44);
+    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: .5s;
+
+}
+textarea:hover{
+  box-shadow: 4px 4px 20px 0 rgba(44, 120, 170, 0.3);
+
+}
+.btn-butoon{
+  background: rgb(170,151,44);
+  padding: 15px 55px;
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  transition: .5s;
+}
+.btn-butoon:hover{
+  background: #ffffff;
+  color: #dbbc0a;
+}
+.contact-content{
+    text-align: center;
+
+}
+.footer-section h4{
+  text-align: center;
+  font-weight: 400;
+}
